@@ -1,0 +1,20 @@
+# Cache y archivos temporales de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Archivos temporales de compilación de SWI-Prolog
+*.qlf
+*.prc
+.pl-history
+
+# Archivos de configuración de entornos de desarrollo (VS Code / IDEs)
+.vscode/
+.idea/
+*.iml
+.settings/
+bin/
+.classpath
+.project
