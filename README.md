@@ -8,6 +8,23 @@ Este proyecto consiste en una plataforma de simulación interactiva que modela y
 * **Gestión de Memoria Dinámica:** Uso de predicados dinámicos (`assert`/`retract`) para el almacenamiento en tiempo real de obstáculos chocados, zonas problemáticas y optimización de rutas.
 * **Interfaz Gráfica Interactiva:** Renderizado del mapa en tiempo real, mapas de calor de celdas visitadas, barras de energía y controladores de velocidad (FPS) utilizando `pygame`.
 
+## Requisitos y Ejecución
+
+### Prerrequisitos
+* Python 3.8 o superior con las librerías `pygame` y `pyswip` instaladas.
+* SWI-Prolog instalado y configurado en las variables de entorno del sistema.
+
+### Ejecución (Versión Híbrida)
+Para iniciar el simulador interactivo final, ejecuta el controlador principal desde la raíz de la versión de Python:
+```bash
+python src/2-version-hibrida-python/controlador.py
+```
+
+### Controles de la Interfaz (Pygame)
+* `ESPACIO`: Pausar / Reanudar la simulación.
+* `TECLA +` / `TECLA -`: Modificar la velocidad de procesamiento (FPS) en tiempo real.
+* `Q`: Cerrar la aplicación de manera segura.
+
 ## Estructura del Proyecto
 
 El repositorio está organizado cronológicamente según las etapas de la entrega:
@@ -16,7 +33,7 @@ El repositorio está organizado cronológicamente según las etapas de la entreg
 simulador-caminata-inteligente/
 │
 ├── src/
-│   ├── 1-version-logica/      # Primera etapa: Simulación base en entorno de 10x10 utilizando el paradigma lógico puro e interfaz nativa XPCE.
+│   ├── 1-version-logica-pura/      # Primera etapa: Simulación base en entorno de 10x10 utilizando el paradigma lógico puro e interfaz nativa XPCE.
 │   │   ├── entorno.pl
 │   │   ├── borracho.pl
 │   │   ├── inteligencia.pl
@@ -34,3 +51,4 @@ simulador-caminata-inteligente/
 │
 └── assets/                         # Recursos visuales e iconos de la interfaz
     └── borracho.png
+```
